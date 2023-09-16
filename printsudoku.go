@@ -5,7 +5,8 @@ import (
 	"time"
 )
 
-func printSudoku(s [9][9]int) {
+// this function will print the sudoku board with styling
+func PrintSudoku(s [9][9]int) {
 	fmt.Print("\033[2J") // clear the screen
     fmt.Print("\033[H")  // move the cursor to the top-left corner
 	fmt.Println("╔═══╤═══╤═══╦═══╤═══╤═══╦═══╤═══╤═══╗")
