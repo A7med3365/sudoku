@@ -31,6 +31,11 @@ func main() {
 		}
 	}
 
+	if !sudoku.ArgsCheck(arr) {
+		fmt.Println("Error")
+		return
+	}
+
 	sudoku.PrintSudoku(arr)
 
 	if sudoku.Solve(arr, 0, 0) {
